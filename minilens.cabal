@@ -1,7 +1,7 @@
 name:     minilens
 version:  1.0.0.2
 synopsis: A minimalistic lens library, providing only the simplest, most basic lens functionality.
-description:         
+description:
     .
     Lenses satisfy the properties of the Category type class, and are used
     to inspect and update individual elements of a data structue in a type-safe
@@ -32,7 +32,7 @@ cabal-version:       >=1.10
 
 library
 
-  exposed-modules:     
+  exposed-modules:
     Data.Lens.Minimal
 
   default-extensions:
@@ -48,8 +48,8 @@ library
     mtl          >=2.2.0    && <=2.2.1,
     semigroups   >=0.16.2.0 && <=1.0.0.0,
     text         >=1.2.0.0  && <1.3.0.0,
-    transformers >=0.3.0.0  && <=0.4.3.0,
-    base         >=4.7      && <4.9
+    transformers >=0.3.0.0  && <=0.6,
+    base         >=4.7      && <5
 
   GHC-options: -Wall
     -fno-warn-name-shadowing
